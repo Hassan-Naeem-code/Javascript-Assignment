@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Declare an empty array using JS literal notation to store
+student names in future. -->
+    <script>
+      var arr = [];
+      var input = prompt("Please enter your choice for entering the element in the array or not Y YES and N NO");
+      if(input==='Y')
+      {
+          var input1 = prompt("Please eneter the number of element you want to enetr");
+          for(var i =0 ;i<=input1 ;i++)
+          {
+              var input2 = prompt("Please enter the element");
+              arr.push(input2);
+          }
+      }
+      else
+      {
+          document.write("Good Bye...");
+      }
+      for(var j = 0 ;j<input2;j++)
+      {
+          console.log(arr[j]);
+          document.write(arr[j]);
+          document.write("<br>");
+      }
+    </script>
+</body>
+</html>

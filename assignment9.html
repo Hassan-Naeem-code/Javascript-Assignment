@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Declare and initialize an empty array to store top movies of
+2015. Add movies one by one in an array. Display the elements
+& length of array in your browser. (Use array’s length method) -->
+    <script>
+    var movies = [];
+    var input = prompt("Please enter the number of movies of 2015");
+    for(var i = 0 ;i<=input ; i++)
+    {
+        var input1 = prompt("Please enter the name of the movies: ");
+        movies.push(input1);
+    }
+    document.write("<br>");
+    for(var j = 0 ; j<input ; j++)
+    {
+        document.write(movies[j]);
+        document.write("<br>");
+    }
+    document.write("<br>");
+    document.write("Array Lenght: ")
+    document.write(movies.length);
+    </script>
+</body>
+</html>

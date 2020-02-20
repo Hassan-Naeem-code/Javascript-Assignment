@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Declare and initialize a multidimensional array representing
+the following matrix: -->
+    <script>
+     var array = new Array(2);
+     for(var i = 0 ; i<4 ; i++)
+     {
+      array[i] = new Array(4);
+     }
+    //  var count = 0;
+    //  for(var l = 0 ; l<4 ; l++)
+    //  {
+    //      for(var j = 0 ; j<4 ; j++)
+    //      {
+    //          array[l][j] = count;
+    //          count ++;
+    //      }
+    //  }
+    array[0][0]= 0;
+    array[0][1]= 1;
+    array[0][2]= 2;
+    array[0][3]= 3;
+
+    array[1][0]= 1;
+    array[1][1]= 0;
+    array[1][2]= 1;
+    array[1][3]= 2;
+
+    array[2][0]= 2;
+    array[2][1]= 1;
+    array[2][2]= 0;
+    array[2][3]= 1;
+     for(var k = 0 ;k<=2 ; k++)
+     {
+         for(var m = 0 ; m<4; m++)
+         {
+             document.write(array[k][m] + "&emsp;");
+         }
+         document.write("<br>");
+     }
+    </script>
+</body>
+</html>

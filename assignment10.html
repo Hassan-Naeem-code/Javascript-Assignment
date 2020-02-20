@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Declare and Initialize an array with your favorite cars. Show
+a. First index of the array
+b. Car at first index of the array
+c. Last index of the array
+d. Car at last index of the array -->
+    <script>
+     var cars = ["Audi","Mercedes","BMW","Ferarri","Buggati"];
+     document.write("Favourite Cars:  ");
+     document.write("<br>");
+     for(var i = 0 ; i<5 ; i++)
+     {
+         document.write(cars[i]);
+     }
+     document.write("<br>");
+     document.write("First index of the array:  ")
+     document.write(cars.indexOf(cars[0]));
+     document.write("<br>");
+     document.write("Car At First Index IS: "+cars[0]);
+     document.write("<br>");
+     document.write("Last Index OF Array:  ");
+     document.write(cars.indexOf(cars[4]));
+     document.write("<br>");
+     document.write("Car at the Last Index Of Array: "+cars[4]);
+
+    </script>
+</body>
+</html>

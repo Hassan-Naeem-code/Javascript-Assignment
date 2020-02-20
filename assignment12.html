@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Initialize an array with color names. Display the array
+elements in your browser.
+a. Ask the user what color he/she wants to add to the
+beginning & add that color to the beginning of the array.
+Display the updated array in your browser.
+b. Ask the user what color he/she wants to add to the end &
+add that color to the end of the array. Display the updated
+array in your browser.
+c. Add two more color to the beginning of the array. Display
+the updated array in your browser.
+d. Delete the first color in the array. Display the updated
+array in your browser.
+e. Delete the last color in the array. Display the updated
+array in your browser.
+f. Ask the user at which index he/she wants to add a color &
+color name. Then add the color to desired position/index.
+. Display the updated array in your browser.
+g. Ask the user at which index he/she wants to delete
+color(s) & how many colors he/she wants to delete. Then
+remove the same number of color(s) from user-defined
+position/index. . Display the updated array in your
+browser. -->
+    <script>
+    var color = ["Yellow","Red","orange"];
+    document.write("A) " +color);
+    document.write("<br>");
+    var input = prompt("Please enter the color of your choice which will add at the beigning: ");
+    color.unshift(input);
+    document.write("<br>");
+    document.write("B) " +color);
+    var input1 = prompt("Please enter your choice you want to add at the end of the array: ");
+    color.push(input1);
+    document.write("<br>");
+    document.write("C)" +color);
+    for(var i = 0 ; i<2 ; i++)
+    {
+        var input2 = prompt("Please enter 2 more color of your choice to add in the array: ");
+        color.unshift(input2);
+    }
+    document.write("<br>");
+    document.write("D)" +color);
+    color.shift();
+    document.write("<br>");
+    document.write("E)" +color);
+    color.pop();
+    document.write("<br>");
+    document.write("F)" +color);
+    var input3 = prompt("Please enter the index on which you want to add the color: ");
+    var input4 = prompt("Please enter your desired color: ");
+    color.splice(input3,0,input4);
+    document.write("<br>");
+    document.write("G)" +color);
+    var input5 = prompt("Please enter the index at which you want to remove a color in number one or many: ");
+    var input6  = prompt("Please enter the number of color you want to remove: ");
+    color.splice(input5,input6);
+    document.write("<br>");
+    document.write("H)" +color);
+    </script>
+</body>
+</html>
